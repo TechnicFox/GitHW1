@@ -1,0 +1,208 @@
+╭─ pwsh   GitHW1   master ≡  ?1   123ms                                                                                                         7,19:07 
+╰─ git sync     
+git: 'sync' is not a git command. See 'git --help'.
+
+The most similar command is
+        svn
+╭─ pwsh   GitHW1   master ≡  ?1   45ms                                                                                                          7,19:08 
+╰─ git --help
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   restore    Restore working tree files
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   diff       Show changes between commits, commit and working tree, etc
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   backfill   Download missing objects in a partial clone
+   branch     List, create, or delete branches
+   commit     Record changes to the repository
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   reset      Set `HEAD` or the index to a known state
+   switch     Switch branches
+   tag        Create, list, delete or verify tags
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+╭─ pwsh   GitHW1   master ≡  ?1   40ms                                                                                                          7,19:08 
+╰─ git fetch origin
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 2 (delta 1), reused 2 (delta 1), pack-reused 0 (from 0)
+Unpacking objects: 100% (2/2), 227 bytes | 37.00 KiB/s, done.
+From https://github.com/TechnicFox/GitHW1
+   54dbd8d..c727250  master     -> origin/master
+╭─ pwsh   GitHW1   master ↓1  ?1   684ms                                                                                                        7,19:08 
+╰─ git history
+git: 'history' is not a git command. See 'git --help'.
+╭─ pwsh   GitHW1   master ↓1  ?1   45ms                                                                                                         7,19:09 
+╰─ git diff      
+╭─ pwsh   GitHW1   master ↓1  ?1   136ms                                                                                                        7,19:10 
+╰─ git log 
+commit 54dbd8d5c3af9655148fd76ad6d51a2f26f35cac (HEAD -> master)
+Author: TechnicFox <technicfox@proton.me>
+Date:   Tue Apr 7 19:03:54 2026 +0100
+
+commit 54dbd8d5c3af9655148fd76ad6d51a2f26f35cac (HEAD -> master)
+Author: TechnicFox <technicfox@proton.me>
+Date:   Tue Apr 7 19:03:54 2026 +0100
+
+    update logs
+
+commit b47664549eba1f7c3412135ad3d7b2f7ce801c9b
+Author: TechnicFox <technicfox@proton.me>
+Date:   Tue Apr 7 19:03:08 2026 +0100
+
+    add logs
+
+commit 933b226bb42303090c21eb66625754facf70c633
+Author: TechnicFox <technicfox@proton.me>
+Date:   Tue Apr 7 19:00:43 2026 +0100
+
+    change10
+
+commit 4d6f6a93e27eaefe500d36ea819ff14341775a56
+:
+commit 54dbd8d5c3af9655148fd76ad6d51a2f26f35cac (HEAD -> master)
+Author: TechnicFox <technicfox@proton.me>
+Date:   Tue Apr 7 19:03:54 2026 +0100
+
+    update logs
+
+commit b47664549eba1f7c3412135ad3d7b2f7ce801c9b
+Author: TechnicFox <technicfox@proton.me>
+Date:   Tue Apr 7 19:03:08 2026 +0100
+
+    add logs
+
+commit 933b226bb42303090c21eb66625754facf70c633
+Author: TechnicFox <technicfox@proton.me>
+Date:   Tue Apr 7 19:00:43 2026 +0100
+
+    change10
+
+commit 4d6f6a93e27eaefe500d36ea819ff14341775a56
+:
+commit 54dbd8d5c3af9655148fd76ad6d51a2f26f35cac (HEAD -> master)
+Author: TechnicFox <technicfox@proton.me>
+Date:   Tue Apr 7 19:03:54 2026 +0100
+
+    update logs
+
+commit b47664549eba1f7c3412135ad3d7b2f7ce801c9b
+Author: TechnicFox <technicfox@proton.me>
+Date:   Tue Apr 7 19:03:08 2026 +0100
+
+    add logs
+
+commit 933b226bb42303090c21eb66625754facf70c633
+Author: TechnicFox <technicfox@proton.me>
+Date:   Tue Apr 7 19:00:43 2026 +0100
+
+    change10
+
+commit 4d6f6a93e27eaefe500d36ea819ff14341775a56
+╭─ pwsh   GitHW1   master ↓1  ?1   1m 39s 790ms                                                                                                 7,19:12 
+╰─ git add .
+╭─ pwsh   GitHW1   master ↓1  +1   42ms                                                                                                         7,19:12 
+╰─ git commit -m "Dev2 change"
+[master cce69a7] Dev2 change
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Dev2Change
+╭─ pwsh   GitHW1   master ↑1 ↓1   68ms                                                                                                           7,19:13 
+╰─ git push -u origin master
+To https://github.com/TechnicFox/GitHW1.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/TechnicFox/GitHW1.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+╭─ pwsh   GitHW1   master ↑1 ↓1   800ms                                                                                                          7,19:13 
+╰─ git pull
+Merge made by the 'ort' strategy.
+ Dev1Change | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Dev1Change
+╭─ pwsh   GitHW1   master ↑2   42s 381ms                                                                                                         7,19:14 
+╰─ git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 469 bytes | 469.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/TechnicFox/GitHW1.git
+   c727250..a3914c8  master -> master
+branch 'master' set up to track 'origin/master'.
+╭─ pwsh   GitHW1   master ≡   1s 245ms                                                                                                           7,19:14 
+╰─ git pull
+Already up to date.
+╭─ pwsh   GitHW1   master ≡   706ms                                                                                                              7,19:44 
+╰─ git status
+On branch Test
+Your branch is up to date with 'origin/Test'.
+
+nothing to commit, working tree clean
+╭─ pwsh   GitHW1   Test ≡   44ms                                                                                                                 7,19:44 
+╰─ git add .
+╭─ pwsh   GitHW1   Test ≡  ~1   62ms                                                                                                            7,19:45 
+╰─ git commit -m "Dev2 changes Test branch"
+[Test 2d6ad36] Dev2 changes Test branch
+ 1 file changed, 1 insertion(+)
+╭─ pwsh   GitHW1   Test ↑1   68ms                                                                                                                7,19:45 
+╰─ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 292 bytes | 292.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/TechnicFox/GitHW1.git
+   0291a6c..2d6ad36  Test -> Test
+╭─ pwsh   GitHW1   Test ≡   1s 228ms                                                                                                             7,19:45 
+╰─ git switch master 
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+╭─ pwsh   GitHW1   master ↓3   38ms                                                                                                              7,19:49 
+╰─ git pull
+Updating a3914c8..dd54220
+Fast-forward
+ File_in_Test_branch |   1 +
+ Logs.txt            | 252 +++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 2 files changed, 252 insertions(+), 1 deletion(-)
+ create mode 100644 File_in_Test_branch
+╭─ pwsh   GitHW1   master ≡   421ms                                                                                                              7,19:49 
+╰─
