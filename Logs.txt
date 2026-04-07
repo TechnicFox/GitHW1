@@ -1,0 +1,281 @@
+╭─ pwsh   Git   main ≡  ?172 ~59 -14 |  +89   76ms                                                                    7,18:52 
+╰─ git init
+Initialized empty Git repository in C:/Users/WindowsVM/Projects/IT Step/Git/.git/
+╭─ pwsh   Git    master ≢   57ms                                                                                        7,18:53 
+╰─
+ *  History restored 
+
+╭─ pwsh   Git    master ≢   112ms                                                                                       7,18:53 
+╰─ git init
+Initialized empty Git repository in C:/Users/WindowsVM/Projects/IT Step/Git/.git/
+╭─ pwsh   Git    master ≢   44ms                                                                                        7,18:53 
+╰─ git add .
+╭─ pwsh   Git    master ≢  +1   45ms                                                                                   7,18:54 
+╰─ git stage
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+╭─ pwsh   Git    master ≢  +1   40ms                                                                                   7,18:54 
+╰─ git comit "change1"
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+╭─ pwsh   Git    master ≢  +1   53ms                                                                                   7,18:55 
+╰─ git commit "change1"
+Aborting commit due to empty commit message.
+╭─ pwsh   Git    master ≢  +1   12s 543ms                                                                              7,18:55 
+╰─ git commit -m change
+[master (root-commit) 0679fe3] change
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 change1
+╭─ pwsh   Git    master ≢   64ms                                                                                        7,18:55 
+╰─ git add .           
+╭─ pwsh   Git    master ≢  +1   29ms                                                                                   7,18:56 
+╰─ git commit -m change2
+[master eb8bb78] change2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 change2
+╭─ pwsh   Git    master ≢   65ms                                                                                        7,18:56 
+╰─ git commit -m change3
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        change3
+
+nothing added to commit but untracked files present (use "git add" to track)
+╭─ pwsh   Git    master ≢  ?1   45ms                                                                                   7,18:56 
+╰─ git commit -h        
+usage: git commit [-a | --interactive | --patch] [-s] [-v] [-u[<mode>]] [--amend]
+                  [--dry-run] [(-c | -C | --squash) <commit> | --fixup [(amend|reword):]<commit>]
+                  [-F <file> | -m <msg>] [--reset-author] [--allow-empty]
+                  [--allow-empty-message] [--no-verify] [-e] [--author=<author>]
+                  [--date=<date>] [--cleanup=<mode>] [--[no-]status]
+                  [-i | -o] [--pathspec-from-file=<file> [--pathspec-file-nul]]
+                  [(--trailer <token>[(=|:)<value>])...] [-S[<keyid>]]
+                  [--] [<pathspec>...]
+
+    -q, --[no-]quiet      suppress summary after successful commit
+    -v, --[no-]verbose    show diff in commit message template
+
+Commit message options
+    -F, --[no-]file <file>
+                          read message from file
+    --[no-]author <author>
+                          override author for commit
+    --[no-]date <date>    override date for commit
+    -m, --[no-]message <message>
+                          commit message
+    -c, --[no-]reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --[no-]reuse-message <commit>
+                          reuse message from specified commit
+    --[no-]fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --[no-]squash <commit>
+                          use autosquash formatted message to squash specified commit
+    --[no-]reset-author   the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --[no-]signoff    add a Signed-off-by trailer
+    -t, --[no-]template <file>
+                          use specified template file
+    -e, --[no-]edit       force edit of commit
+    --[no-]cleanup <mode> how to strip spaces and #comments from message
+    --[no-]status         include status in commit message template
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --[no-]all        commit all changed files
+    -i, --[no-]include    add specified files to index for commit
+    --[no-]interactive    interactively add files
+    -p, --[no-]patch      interactively add changes
+    -U, --unified <n>     generate diffs with <n> lines context
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    -o, --[no-]only       commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --verify              opposite of --no-verify
+    --[no-]dry-run        show what would be committed
+    --[no-]short          show status concisely
+    --[no-]branch         show branch information
+    --[no-]ahead-behind   compute full ahead/behind values
+    --[no-]porcelain      machine-readable output
+    --[no-]long           show status in long format (default)
+    -z, --[no-]null       terminate entries with NUL
+    --[no-]amend          amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    --post-rewrite        opposite of --no-post-rewrite
+    -u, --[no-]untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+╭─ pwsh   Git    master ≢  ?1   46ms                                                                                   7,18:56 
+╰─ git add .
+╭─ pwsh   Git    master ≢  +1   29ms                                                                                   7,18:57 
+╰─ git commit -m change3
+[master 8ec89ed] change3
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 change3
+╭─ pwsh   Git    master ≢   54ms                                                                                        7,18:57 
+╰─ git add .
+╭─ pwsh   Git    master ≢  +1   28ms                                                                                   7,18:57 
+╰─ git commit -m change3
+[master 93f4765] change3
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 change4
+╭─ pwsh   Git    master ≢   55ms                                                                                        7,18:57 
+╰─ git commit -m change5
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        change5
+
+nothing added to commit but untracked files present (use "git add" to track)
+╭─ pwsh   Git    master ≢  ?1   43ms                                                                                   7,18:57 
+╰─ git add .
+╭─ pwsh   Git    master ≢  +1   28ms                                                                                   7,18:57 
+╰─ git commit -m change5
+[master 7c649c9] change5
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 change5
+╭─ pwsh   Git    master ≢   55ms                                                                                        7,18:57 
+╰─ git commit -m change6
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        change6
+
+nothing added to commit but untracked files present (use "git add" to track)
+╭─ pwsh   Git    master ≢  ?1   43ms                                                                                   7,18:57 
+╰─ git add .
+╭─ pwsh   Git    master ≢  +1   35ms                                                                                   7,18:58 
+╰─ git commit -m change6
+[master 57782e2] change6
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 change6
+╭─ pwsh   Git    master ≢   57ms                                                                                        7,18:58 
+╰─ git add .
+╭─ pwsh   Git    master ≢  +1   30ms                                                                                   7,18:58 
+╰─ git commit -m change7
+[master 80bc0d9] change7
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 change7
+╭─ pwsh   Git    master ≢   68ms                                                                                        7,18:58 
+╰─ git add .
+╭─ pwsh   Git    master ≢  +1   28ms                                                                                   7,18:58 
+╰─ git commit -m change8
+[master cab84e5] change8
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 change8
+╭─ pwsh   Git    master ≢   66ms                                                                                        7,18:58 
+╰─ git add .
+╭─ pwsh   Git    master ≢  +1   29ms                                                                                   7,18:58 
+╰─ git commit -m change8
+[master f92900f] change8
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 change9
+╭─ pwsh   Git    master ≢   53ms                                                                                        7,18:58 
+╰─ git commit --ammend  
+error: unknown option `ammend'
+usage: git commit [-a | --interactive | --patch] [-s] [-v] [-u[<mode>]] [--amend]
+                  [--dry-run] [(-c | -C | --squash) <commit> | --fixup [(amend|reword):]<commit>]
+                  [-F <file> | -m <msg>] [--reset-author] [--allow-empty]
+                  [--allow-empty-message] [--no-verify] [-e] [--author=<author>]
+                  [--date=<date>] [--cleanup=<mode>] [--[no-]status]
+                  [-i | -o] [--pathspec-from-file=<file> [--pathspec-file-nul]]
+                  [(--trailer <token>[(=|:)<value>])...] [-S[<keyid>]]
+                  [--] [<pathspec>...]
+
+    -q, --[no-]quiet      suppress summary after successful commit
+    -v, --[no-]verbose    show diff in commit message template
+
+Commit message options
+    -F, --[no-]file <file>
+                          read message from file
+    --[no-]author <author>
+                          override author for commit
+    --[no-]date <date>    override date for commit
+    -m, --[no-]message <message>
+                          commit message
+    -c, --[no-]reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --[no-]reuse-message <commit>
+                          reuse message from specified commit
+    --[no-]fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --[no-]squash <commit>
+                          use autosquash formatted message to squash specified commit
+    --[no-]reset-author   the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --[no-]signoff    add a Signed-off-by trailer
+    -t, --[no-]template <file>
+                          use specified template file
+    -e, --[no-]edit       force edit of commit
+    --[no-]cleanup <mode> how to strip spaces and #comments from message
+    --[no-]status         include status in commit message template
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --[no-]all        commit all changed files
+    -i, --[no-]include    add specified files to index for commit
+    --[no-]interactive    interactively add files
+    -p, --[no-]patch      interactively add changes
+    -U, --unified <n>     generate diffs with <n> lines context
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    -o, --[no-]only       commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --verify              opposite of --no-verify
+    --[no-]dry-run        show what would be committed
+    --[no-]short          show status concisely
+    --[no-]branch         show branch information
+    --[no-]ahead-behind   compute full ahead/behind values
+    --[no-]porcelain      machine-readable output
+    --[no-]long           show status in long format (default)
+    -z, --[no-]null       terminate entries with NUL
+    --[no-]amend          amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    --post-rewrite        opposite of --no-post-rewrite
+    -u, --[no-]untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+╭─ pwsh   Git    master ≢   45ms                                                                                        7,18:59 
+╰─ git commit --amend
+[master 4d6f6a9] change9
+ Date: Tue Apr 7 18:58:29 2026 +0100
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 change9
+╭─ pwsh   Git    master ≢   56s 131ms                                                                                   7,19:00 
+╰─ git add .
+╭─ pwsh   Git    master ≢  +1   32ms                                                                                   7,19:00 
+╰─ git commit -m change10
+[master 933b226] change10
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 change10
+╭─ pwsh   Git    master ≢   68ms                                                                                        7,19:00 
+╰─ git remote add origin https://github.com/TechnicFox/GitHW1.git
+╭─ pwsh   Git   master ≢   46ms                                                                                         7,19:01 
+╰─ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/TechnicFox/GitHW1.git'
+╭─ pwsh   Git   master ≢   74ms                                                                                         7,19:01 
+╰─ git push -u origin master
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (21/21), 1.74 KiB | 890.00 KiB/s, done.
+Total 21 (delta 8), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (8/8), done.
+To https://github.com/TechnicFox/GitHW1.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
